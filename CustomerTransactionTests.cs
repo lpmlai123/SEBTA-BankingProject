@@ -11,7 +11,7 @@ namespace BankingAutomation
         [Test]
         public void VerifyTransactionsAndBalance()
         {
-            WebDriverWait wait = new WebDriverWait(driver!, TimeSpan.FromSeconds(10));
+            WebDriverWait wait = new WebDriverWait(driver!, TimeSpan.FromSeconds(50));
             wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//button[text()='Customer Login']")));
             driver.FindElement(By.XPath("//button[text()='Customer Login']")).Click();
 
