@@ -6,8 +6,7 @@ namespace BankingAutomation
 {
     public class BaseTest
     {
-        protected IWebDriver driver;
-
+        protected IWebDriver? driver;
         [SetUp]
         public void Setup()
         {
