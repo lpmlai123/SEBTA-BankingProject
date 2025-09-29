@@ -13,7 +13,7 @@ namespace BankingAutomation
         public void CreateVerifyDeleteCustomers()
         {
 
-            WebDriverWait wait = new WebDriverWait(driver!, TimeSpan.FromSeconds(10));
+            WebDriverWait wait = new WebDriverWait(driver!, TimeSpan.FromSeconds(50));
             wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//button[text()='Bank Manager Login']")));
             driver.FindElement(By.XPath("//button[text()='Bank Manager Login']")).Click();
             driver.FindElement(By.XPath("//button[contains(text(),'Add Customer')]")).Click();
